@@ -52,7 +52,7 @@ const Nav = ({openNav}:Props) => {
         </div>       <div className="flex items-center space-x-4">
           <button className="md:px-8 md:py-2 px-6 py-2 text-white font-semibold text-base bg-blue-500 hover:bg-blue-800 transition-all duration-200 rounded-full">
             Find Tutor
-          </button>
+</button>
         </div>
         </div>
         <HiBars3BottomRight onClick={openNav}  className='w-8 h-8 cursor-pointer text-black lg:hidden' />
