@@ -4,9 +4,10 @@ import Link from 'next/link'
 import React, { use, useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
-
-
-const Nav = () => {
+type Props = {
+  openNav: () => void
+}
+const Nav = ({openNav}:Props) => {
 
   const [navbg, setNavbg] = useState(false);
 
@@ -25,7 +26,7 @@ const Nav = () => {
 
 
   return (
-    <div className='w-full transition-all duration-200  bg-white shadow-lg h-[12vh] z-[1000]'>
+    <div className={` fixed ${navbg ? 'bg-red-900 shadow-md' : 'fiexed'}  w-full transition-all duration-200  bg-white shadow-lg h-[12vh] z-[1000]`}>
       <div className="flex items-center justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* logo comes in here not make it in text will be change by image */}
         <h1 className='text-2xl font-bold text-gray-900'>
@@ -54,7 +55,7 @@ const Nav = () => {
           </button>
         </div>
         </div>
-        <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-black lg:hidden' />
+        <HiBars3BottomRight onClick={openNav}  className='w-8 h-8 cursor-pointer text-black lg:hidden' />
     </div>
   </div>
 

@@ -8,16 +8,6 @@ const font = Poppins({
   subsets: ["latin"],
 });
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 export const metadata: Metadata = {
   title: "Tutorial Link",
   description: "Landing page for Tutorial Link | A platform for tutors and students",
