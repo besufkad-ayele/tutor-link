@@ -23,7 +23,8 @@ export default function RootLayout({
       <body
         className={`${font.className} antialiased`}
       >
-        <ResponsiveNav />
+        {/* why we add the responsive nave in here ? */}
+        <ResponsiveNav /> 
         {children}
       </body>
     </html>

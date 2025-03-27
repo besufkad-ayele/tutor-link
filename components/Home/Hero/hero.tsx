@@ -1,33 +1,18 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
 
 const hero = () => {
   return (
-    <div className="w-full pt-[4vh] md:pt-[12vh] h-screen  bg-p[#f7f8fb]">
-      <div className="flex justify-center flex-col w-[90%] sm:w-[80%] h-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 space-y-8">
-          {/* image content */}
-          <div className="hidden lg:block">
-            <Image
-              src="/images/tutor-link-black.png"
-              alt="hero for tutor link"
-              width={700}
-              height={800}
-            />
-          </div>
-          {/* text content */}
-          <div className="w-fit py-4 px-2 md:px-5 rounded-full shadow-md flex item-center space-x-3 bg-white">
-            <div className="py-3 py-1 md:px-5 md:py-1 rounded-full bg-blue-700 md:text-base sm:text-sm text-xs text-white">
-              <p className="text-center">Tutor Link</p>
-            </div>
-            <p className="text-xs sm:text-sm">
-              we have updated our term and condition policy
-            </p>
-          </div>
-        </div>
-      </div>
+    <div
+      className="h-screen w-full sm:w-[95%] mx-auto flex items-center justify-center 
+           bg-gradient-to-r from-blue-500 to-purple-600 
+           bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/cat-dog-bg.jpg')" }} // Updated path
+    >
+      <h1 className="text-black text-7xl font-bold text-center">
+      Welcome to the Hero Section
+      </h1>
     </div>
   );
-};
+}
 
-export default hero;
+export default hero
