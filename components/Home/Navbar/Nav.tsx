@@ -22,9 +22,9 @@ const Nav = ({ openNav }: Props) => {
 
   return (
     <div
-      className={` fixed ${
+      className={` mx-auto fixed ${
         navbg ? "bg-gray-200 shadow-md" : "bg-white"
-      } w-full transition-all duration-200 h-[8vh] z-[1000] flex items-center`}
+      } w-full transition-all duration-200 h-[vh] z-[1000] flex items-center h-[12vh] z-[1000]`}
       // className={` fixed ${
       //   navbg ? "bg-red-900 shadow-md" : "fiexed"
       // }  w-full transition-all duration-200  bg-white shadow-lg h-[12vh] z-[1000]`}
