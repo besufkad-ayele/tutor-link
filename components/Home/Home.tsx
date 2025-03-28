@@ -8,6 +8,7 @@ import Feature from "./Feature/Feature";
 import Review from "./Review/Review";
 import ResponsiveNav from "./Navbar/ResponsiveNav";
 
+
 const Home = () => {
   return (
     <div className="pt-20">
