@@ -24,7 +24,7 @@ const Nav = ({ openNav }: Props) => {
     <div
       className={` mx-auto fixed ${
         navbg ? "bg-gray-200 shadow-md" : "bg-white"
-      } w-full transition-all duration-200    z-[1000] flex items-center h-auto py-6 md:py-5 z-[1000]`}
+      } w-full transition-all duration-200 flex items-center h-auto py-6 md:py-5 z-[1000]`}
       // className={` fixed ${
       //   navbg ? "bg-red-900 shadow-md" : "fiexed"
       // }  w-full transition-all duration-200  bg-white shadow-lg h-[12vh] z-[1000]`}
