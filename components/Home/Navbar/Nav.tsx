@@ -46,17 +46,27 @@ const Nav = ({ openNav }: Props) => {
           ))}
         </div>
         {/* buttons  */}
-        <div className="hidden lg:flex items-center space-x-4">
-          <div className="flex items-center space-x-4">
-            <button className="md:px-8 md:py-2 px-6 py-2 text-white font-semibold text-base bg-red-400 hover:bg-red-700 transition-all duration-200 rounded-full">
-              Start Tutoring
-            </button>
-          </div>{" "}
-          {/* <div className="flex items-center space-x-4">
-            <button className="md:px-8 md:py-2 px-6 py-2 text-white font-semibold text-base bg-blue-500 hover:bg-blue-800 transition-all duration-200 rounded-full">
-              Find Tutor
-            </button>
-          </div> */}
+        <div className="buttons flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
+            <div className="flex items-center space-x-4">
+              <Link href='../auth/login'> <button className="md:px-8 md:py-2 px-6 py-2 text-white font-semibold text-base bg-red-400 hover:bg-red-700 transition-all duration-200 rounded-full">
+                Login
+              </button></Link>
+             
+            </div>
+          </div>
+          <div className="hidden lg:flex items-center space-x-4">
+            <div className="flex items-center space-x-4">
+              <Link href="../auth/signup">
+                <button
+                  onClick={() => {}}
+                  className="md:px-8 md:py-2 px-6 py-2 text-white font-semibold text-base bg-green-400 hover:bg-red-700 transition-all duration-200 rounded-full"
+                >
+                  Register
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
         <HiBars3BottomRight
           onClick={openNav}

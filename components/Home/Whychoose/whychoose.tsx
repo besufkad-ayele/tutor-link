@@ -3,7 +3,7 @@ import WhyChooseCard from "./WhyChooseCard";
 
 const whychoose = () => {
   return (
-    <div className="py-16 pb-16 bg-gray-800">
+    <div className="py-16 pb-16 bg-gray-800 md:w-full">
       <h1 className="text-2xl md:text-4xl font-extrabold text-center text-white items-center">
         Why Choose Tutor Link?
       </h1>
