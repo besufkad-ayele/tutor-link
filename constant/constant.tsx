@@ -8,6 +8,18 @@ export const navLinks = [
     id: 2,
     label: "Parent/Student",
     url: "../about/parent",
+    subLinks: [
+      {
+        id: 1,
+        label: "Parent",
+        url: "../about/parent",
+      },
+      {
+        id: 2,
+        label: "Student",
+        url: "../about/student",
+      },
+    ],
   },
   {
     id: 3,

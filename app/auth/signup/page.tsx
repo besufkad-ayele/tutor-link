@@ -1,13 +1,13 @@
-import React from 'react'
-import LoginPage from './login'
+import React from "react";
+import LoginPage from "./login";
+import RegistrationForm from "./authentication/page";
 
 const page = () => {
   return (
-    <div className='h-screen flex items-center justify-center bg-red'>
-      <h1 className='text-red-500'>register page</h1>
-      <LoginPage/>
+    <div className="py:24 md:px-24 md:py-24 flex w-full min-h-screen flex-col items-center justify-center bg-muted p-6 md:p-10">
+      <RegistrationForm />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

@@ -2,11 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 
 type Props = {
-    image: string
-    title: string
-    linkText: string
-    }
-const WhyChooseCard = ({image, title, linkText}:Props) => {
+  image: string;
+  title: string;
+  description: string;
+};
+const WhyChooseCard = ({image, title, description }:Props) => {
   return (
     <div className='flex flex-col items-center bg-gray p-4 rounded-lg shadow-2xl backdrop-blur-md bg-opacity-70 shadow-gray-500/50'>
         <Image
@@ -19,7 +19,6 @@ const WhyChooseCard = ({image, title, linkText}:Props) => {
         <h1>{title}</h1>
         <p className='text-gray-600 text-center font-medium text-sm mb'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, illo. Quam, unde.
         </p>
-        <p className='text-blue-400'>{linkText}</p>
     </div>
   )
 }

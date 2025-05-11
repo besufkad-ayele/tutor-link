@@ -1,8 +1,8 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export function LoginForm({
   className,
@@ -80,19 +80,22 @@ export function LoginForm({
               </div>
               <div className="text-center text-sm">
                 Don&apos;t have an account?{" "}
-                <a href="../auth/signup" className="underline underline-offset-4">
+                <a
+                  href="../auth/signup"
+                  className="underline underline-offset-4"
+                >
                   Sign up
                 </a>
               </div>
             </div>
           </form>
-            <div className="bg-muted relative hidden md:block overflow-hidden">
+          <div className="bg-muted relative hidden md:block overflow-hidden">
             <img
               src="/images/tutor-link-black.png"
               alt="Image"
               className="absolute inset-0 h-full w-full object-contain dark:brightness-[0.2] dark:grayscale"
             />
-            </div>
+          </div>
         </CardContent>
       </Card>
       <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">

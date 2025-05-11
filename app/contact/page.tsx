@@ -1,11 +1,10 @@
+import ContactForm from '@/components/Home/Contact/Contact';
 import React from 'react'
 
 const page = () => {
-  return (
-    <div className="h-screen flex items-center justify-center bg-red ">
-      <h1 className="text-red-500">Contact Us</h1>
-    </div>
-  );
+  return <div className="">
+    <ContactForm />
+  </div>;
 }
 
 export default page

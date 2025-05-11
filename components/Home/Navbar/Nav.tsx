@@ -1,7 +1,7 @@
 "use client";
 import { navLinks } from "@/constant/constant";
 import Link from "next/link";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
 type Props = {
@@ -22,12 +22,11 @@ const Nav = ({ openNav }: Props) => {
 
   return (
     <div
-      className={` mx-auto fixed ${
-        navbg ? "bg-gray-200 shadow-md" : "bg-white"
+      className={`mx-auto fixed ${
+        navbg
+          ? "bg-white/70 backdrop-blur-md shadow-md"
+          : "bg-white"
       } w-full transition-all duration-200 flex items-center h-auto py-6 md:py-5 z-[1000]`}
-      // className={` fixed ${
-      //   navbg ? "bg-red-900 shadow-md" : "fiexed"
-      // }  w-full transition-all duration-200  bg-white shadow-lg h-[12vh] z-[1000]`}
     >
       <div className="flex items-center justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* logo comes in here not make it in text will be change by image */}
@@ -49,10 +48,11 @@ const Nav = ({ openNav }: Props) => {
         <div className="buttons flex items-center space-x-4">
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-4">
-              <Link href='../auth/login'> <button className="md:px-8 md:py-2 px-6 py-2 text-white font-semibold text-base bg-red-400 hover:bg-red-700 transition-all duration-200 rounded-full">
-                Login
-              </button></Link>
-             
+              <Link href="../auth/login">
+                <button className="md:px-8 md:py-2 px-6 py-2 text-white font-semibold text-base bg-red-400 hover:bg-red-700 transition-all duration-200 rounded-full">
+                  Login
+                </button>
+              </Link>
             </div>
           </div>
           <div className="hidden lg:flex items-center space-x-4">

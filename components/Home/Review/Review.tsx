@@ -1,8 +1,11 @@
+import CallToAction from '@/components/call-to-action'
 import React from 'react'
 
 const Review = () => {
   return (
-    <div>Review</div>
+    <div>
+      <CallToAction></CallToAction>
+    </div>
   )
 }
 
